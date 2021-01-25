@@ -1,0 +1,105 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    overflow-y: scroll; 
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;    
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    height: 70px;
+    background: #06067c65;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 1rem;
+    color: aliceblue;
+}
+
+.navbar ul li a:hover {
+    color: aqua;
+}
+
+.navbar ul li a:active{
+    color: yellow;
+}
+
+.body-section div{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay{
+    height: 100vh;
+    width: 100%;
+    background: #000000;
+    padding: 0 5rem;
+    /* transition: 10s; */
+}
+
+.fade{
+    background: #00000000;
+    transition: 10s;
+}
+
+.body-section div h1{
+    font-size: 4rem;
+    width: 60%;
+}
+
+#home{
+    background: rgb(1, 34, 29);
+    text-align: center;
+    color: whitesmoke;
+}
+
+#about{
+    background: #470526;
+    text-align: center;
+}
+
+#services{
+    background: #023346;
+    text-align: center;
+    transition: 4s;
+}
+
+#portfolio{
+    background: rgb(83, 39, 3);
+    text-align: center;
+}
+
+#contact{
+    background: rgb(33, 65, 3);
+    text-align: center;
+}
+
+.hide {
+    display: none !important;
+}
